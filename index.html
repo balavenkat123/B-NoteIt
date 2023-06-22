@@ -11,9 +11,31 @@
         <div class="container">
             <img src="img.png">
             <input type="text" id="input-field" placeholder="name">
+            <input type="password" placeholder="password">
             <button id="add-button">Add to the list</button>
-            <p id="para"></p>
+            <p id="para">hello</p>
         </div>
-        <script src="index.js" "type":"module"></script>
+
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyD2tYMtIyxpJscCItQodl4j1jrM1eUdM20",
+              authDomain: "bnotes-2f0fd.firebaseapp.com",
+              projectId: "bnotes-2f0fd",
+              storageBucket: "bnotes-2f0fd.appspot.com",
+              messagingSenderId: "312073280041",
+              appId: "1:312073280041:web:975251d33a5ecebea59a38"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+          </script>
+        
+        <script src="index.js" type="module"></script>
     </body>
 </html>
